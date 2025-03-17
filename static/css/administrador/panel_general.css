@@ -1,0 +1,14 @@
+.panel div{
+    margin: 1%;
+    height: 150px;
+}
+
+.boton {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,388 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>informacion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static './css/styles.css' %}"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="{% static './js/carnawe_info.js' %}"></script>
+  </head>
+
+  <body>
+
+<div class="container-fluid">
+
+    <header class="row">
+
+        <div id="logo">
+            <img class="rounded mx-auto d-block" id="imagenlogo" src= "{% static './img/logo_carnaWe.png' %}"/>
+        </div>
+
+        <div id="navegador" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <ul id="elementosnav" class="nav col-8 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li class="elemento">
+                    <a href="#" class="nav-link px-2 link-dark">Inicio</a>
+                </li>
+                <li class="elemento">
+                    <a href="#" class="nav-link px-2 link-dark">Mis compras</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2 link-dark">¿Qué es el carnaval?</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2 link-dark">Contacto</a>
+                </li>
+            </ul>
+
+            <div id="botonesnav" class="col-md-4 text-end">
+                <button type="button" class="btn btn-primary me-2 botonesheader">Login</button>
+                <button type="button" class="btn btn-primary botonesheader">Registro</button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container-fluid" id="main">
+
+        <div class="row">
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li id="inicio" class="breadcrumb-item"><a href="#">Inicio </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">¿Qué es el carnaval?</li>
+                </ol>
+            </nav>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="titulomain">
+                <h3>El carnaval de Cádiz</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 my-auto">
+                <p>El carnaval de Cádiz es una celebración de origen popular en la cual se concentran una gran multitud de personas en torno a la propia fiesta.
+                    Para el gaditano es la fiesta por excelencia de la ciudad siendo esta un momento muy esperado y marcada en rojo en el calendario cada año.
+                </p>
+            </div>
+            <div class="col-lg-3" id="prof">
+                <img id="imgsaludo" src="{% static './img/disfraces.jpg' %}" alt="dos personas disfrazadas saludando">
+            </div>
+            <div class="col-lg-3 my-auto">
+                <p>
+                   Es la ciudad de Cádiz y el salero de su gente la que otorga una personalidad muy peculiar, siendo esta seguida y disfrutada por personas de diferentes puntos
+                   ya no solo de la provincia, sino del mundo entero. En <strong>carnaWe</strong> te queremos ofrecer la oportunidad de que la conozcas en vivo y en directo.
+                </p>
+            </div>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static './img/carr1.jpg' %}" class="d-block w-100 imgCarr" alt="imagen carrusel 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static './img/carr2.jpg' %}" class="d-block w-100 imgCarr" alt="imagen carrusel 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static './img/carr3.jpg' %}" class="d-block w-100 imgCarr" alt="imagen carrusel 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 my-auto">
+                <h3>El cartel del carnaval de Cádiz 2023</h3>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <p>Presentado como cada año el cartel de las fiestas del carnaval gaditano en su edición del presente año 
+                    2023.
+                    Obra del autor Fabio Castro Jiménez siendo elegido con una mayoría abrumadora de votos, más de 
+                    1400, unos 1000 de ventaja sobre el segundo clasificado.
+                </p>
+                <p>El autor ha destacado en rueda de prensa que la obra nació tras una tarde de baños en el Puente Canal. 
+                   "En un día de final de angustia de un momento de mi vida me di tres baños, y cuando volví a casa de mi madre soñé la imagen"
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h6>¡ Échame un vistazo con el ratón pisha !</h6>
+                <div id="poster"></div>
+            </div>
+            <div class="col-lg-12 col-md-6">
+                <p>Una declaración de amor a Cádiz: así ha definido el artista Fabio Castro la obra ¡Que llueva Carnaval!, 
+                    el cartel que ha ganado el concurso popular de obras para representar al Carnaval de Cádiz en el año 2023 y que hoy 
+                    ha presentado la delegada de Fiestas, Lola Cazalilla, y el delegado de Presidencia del Ayuntamiento de Cádiz, Paco Cano, junto al autor en 
+                    la mañana de este miércoles. Un cartel con mucha solera propio de la fiesta por antonomasia de Cádiz.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h3>COAC, ¿Qué es?, ¿Quiénes participan?</h3>
+        </div>
+
+        <div class="row coac" >
+            <div class="row">
+                <p class="col-lg-6">El <strong>concurso oficial de agrupaciones carnavalescas (COAC)</strong>es el concurso, como su nombre indica, de las diversas agrupaciones en sus distintas categorías
+                    que se celebra cada año durante las fiestas carnavalescas de la ciudad gaditana.                   
+                </p>
+                <p class="col-lg-6">Tiene lugar en el teatro falla en el cual actuan todas las agrupaciones en las fases de preliminares, cuartos de final, semifinal y la gran final.
+                     Las agrupaciones se dividen en coros, comparsas, chirigotas y tríos, cuartetos o quintetos. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row coac">
+            <div class="col-lg-4 my-auto">
+                <img id="imgsaludo" src="{% static './img/amoaescucha.jpg' %}" alt="chirigota amo a escucha">
+            </div>
+            <div class="col-lg-4">
+                <h5>Chirigotas</h5>
+                <p>Es una agrupación musical coral de carácter carnavalesco de unos 12-15 participantes que canta principalmente ofreciendo coplas humorísticas
+                    Las chirigotas son coplillas recitativas y monólogas y poseen unas formas musicales muy simples procedentes del pasodoble, la rumba, el tanguillo, la seguidilla, la jota, la isa canaria, etc. 
+                    Tratan diversos temas como son; la actualidad, política, prensa del corazón.
+                </p>
+            </div>
+            <div class="col-lg-4 my-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-header">
+                      <h5>Clasificación 2023</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">1º Amoaescuchá</li>
+                      <li class="list-group-item">2º Los Viñanos</li>
+                      <li class="list-group-item">3º Los Desgraciaitos</li>
+                      <li class="list-group-item">4º Los Mi alma</li>
+                      <li class="list-group-item">5º Frente talibán</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row coac">
+            <div class="col-lg-4 my-auto">
+                <img id="imgsaludo" src="{% static './img/ciudadinvisible.jpg' %}" alt="comparsa ciudad invisible">
+            </div>
+            <div class="col-lg-4">
+                <h5>Comparsas</h5>
+                <p>Esta modalidad cuenta con unos 15 componentes, clasificados en tenores, segundas, octavillas y contraaltos. Los principales instrumentos que suelen utilizar también son el bombo, la caja y la guitarra, 
+                    además de acompañarse con otros relacionados con el tipo, al igual que en la chirigota. Suelen ser letras más reflexivas y profundas.
+                    </p>
+            </div>
+            <div class="col-lg-4 my-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-header">
+                      <h5>Clasificación 2023</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">1º La ciudad invisible</li>
+                      <li class="list-group-item">2º Los Esclavos</li>
+                      <li class="list-group-item">3º Cádiz de mi alma</li>
+                      <li class="list-group-item">4º El embrujo de Cádiz</li>
+                      <li class="list-group-item">5º Los Peliculeros</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row coac">
+            <div class="col-lg-4 my-auto">
+                <img id="imgsaludo" src="{% static './img/gladiadores.jpg' %}" alt="cuarteto gladiadores">
+            </div>
+            <div class="col-lg-4">
+                <h5>Tríos, Cuartetos y Quintetos</h5>
+                <p>Son formaciones de 3, 4 o 5 personas. Su acompañamiento musical es, mínimo, pito-caña y palos. Al contrario que las anteriores su puesta en escena y sus coplas 
+                    son las que destilan más mordacidad, según avanzan de fase van modificando sus teatrillos, muy irónicos y divertidos.
+                </p>
+            </div>
+            <div class="col-lg-4 my-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-header">
+                      <h5>Clasificación 2023</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">1º Escuela taller de gladiadores</li>
+                      <li class="list-group-item">2º Los vigilantes de la laja</li>
+                      <li class="list-group-item">3º El COAC, no pasamos ni una más</li>
+                      <li class="list-group-item">4º E.I la mano que mece la cuna</li>
+                      <li class="list-group-item">5º Desierto</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row coac">
+            <div class="col-lg-4 my-auto">
+                <img id="imgsaludo" src="{% static './img/losmartinez.jpg' %}" alt="coro los martinez">
+            </div>
+            <div class="col-lg-4">
+                <h5>Coro</h5>
+                <p>Es un conjunto de voces entre 20 y 40 componentes acompañados por instrumentos de cuerda. El disfraz y las letrillas de sus coplas giran en torno a una puesta
+                    en escena alusiva a la actualidad. Son letras, al igual que en las comparsas de un carácter más serio y profundo. Aunque también se tratan temas más actuales.
+                </p>
+            </div>
+            <div class="col-lg-4 my-auto">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-header">
+                      <h5>Clasificación 2023</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">1º Los martínez</li>
+                      <li class="list-group-item">2º El día de mañana</li>
+                      <li class="list-group-item">3º La voz</li>
+                      <li class="list-group-item">4º Los negros</li>
+                      <li class="list-group-item">5º Aquí no se rinde nadie</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+
+            <div class="row coac">
+                <h3>¿Dónde concursan?</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <p>
+                        El gran teatro Falla está situado en la plaza Fragela de Cádiz, es un teatro de estilo islámico como se puede observar en sus característicos arcos de herradura.
+                        Está construido en ladrillo rojo, cuenta con un aforo para 1.214 espectadores repartidos en butacas, palcos, anfiteatro y paraíso. 
+                        El escenario mide 18 metros de largo por 25,5 metros de fondo y en el techo se puede observar una alegoría del paraíso.
+                    </p>
+                    <div>
+                        <h6>¿Te gustaría conocerlo en persona? Compra ya tus entradas para el COAC</h6>
+                    </div>
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Comprar Entradas</a>
+                    </div>
+                </div>
+                <div class="col-6 my-auto">
+                    <img id="imgsaludo" src="{% static './img/falla.jpg' %}" alt="teatro falla">
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row coac">
+            <h3>Artistas históricos del carnaval</h3>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    <h5>Martínez Ares</h5>
+                    <img id="imgsaludo" src="{% static './img/ares.png' %}" alt="martínez ares">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <h5>Julio Pardo</h5>
+                    <img id="imgsaludo" src="{% static './img/julio_pardo.png' %}" alt="julio pardo">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <h5>Tino Tovar</h5>
+                    <img id="imgsaludo" src="{% static './img/tino.png' %}" alt="tino tovar">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <h5>Paco Alba</h5>
+                    <img id="imgsaludo" src="{% static './img/paco_alba.png' %}" alt="paco alba">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <h5>Joaquin quiñones</h5>
+                    <img id="imgsaludo" src="{% static './img/joaquin.png' %}" alt="joaquin quiñones">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <h5>Manolo Santander</h5>
+                    <img id="imgsaludo" src="{% static './img/santander.png' %}" alt="manolo santander">
+                    <div class="row coac">
+                        <a href="#" class="btn btn-warning mx-auto col-6">Más Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <footer class="row text-center text-light py-4">
+
+        <div class="col-4">
+            <h4 class="mb-4">Elaborado por</h4>
+            <p>Equipo de desarrollo Los Chemaliers</p>
+        </div>
+        <div class="col-4">
+            <h4 class="mb-4">Sobre nosotros</h4>
+            <p class="px-4">carna We es una familia de programadores 
+                afi cionada al carnaval que ha desarrollado una 
+                web donde adquirir entradas para el falla .</p>
+        </div>
+        <div class="col-4">
+            <h4 class="mb-4">Redes Sociales</h4>
+            <div class="d-flex justify-content-center">
+                <img src="{% static './img/twitter.png' %}" alt="icono de twitter">
+                <img src="{% static './img/instagram.png' %}" alt="icono de instagram">
+                <img src="{% static './img/facebook.png' %}" alt="icono de facebook">
+            </div>
+        </div>
+        <div class="mt-3">
+            <h5 class="d-inline">Todos los derechos reservados</h5>
+            <img src="{% static './img/marca_r.png' %}" alt="logo copyright">
+        </div>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
